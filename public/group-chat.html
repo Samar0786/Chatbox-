@@ -8,10 +8,20 @@
     <div class="chat-container">
         <h2>Group Chat</h2>
         <div id="chat-messages"></div>
+        
+        <!-- Text message input -->
         <div class="chat-input">
             <input type="text" id="messageInput" placeholder="Type message...">
             <button id="sendButton">Send</button>
         </div>
+
+        <!-- Screenshot (image) upload -->
+        <div class="chat-input">
+            <!-- In public/group-chat.html -->
+            <input type="file" id="fileInput" accept="image/*,application/pdf">
+            <button id="sendFileButton">Send File</button>
+        </div>
+
         <a href="/dashboard.html">Back to Dashboard</a>
     </div>
     <script src="/js/chat.js"></script>
